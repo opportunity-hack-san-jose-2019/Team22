@@ -9,11 +9,11 @@ class Checkin extends React.Component {
                 <form className="form">
                     <label className="SessionCode">
                         Session Code:
-                        <input type="text" name="name" />
+                        <input type="text" name="SessionCode" />
                     </label>
                     <label className="Email">
                         Email:
-                        <input type="text" name="name" />
+                        <input type="text" name="Email" />
                     </label>
                     <label className="Submit">
                         <input type="submit" value="Submit" />
