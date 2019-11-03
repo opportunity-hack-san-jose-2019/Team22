@@ -64,7 +64,6 @@ module.exports = {
       }
     ]
   },
-  target: "node",
   devServer: {
     historyApiFallback: true
   },
