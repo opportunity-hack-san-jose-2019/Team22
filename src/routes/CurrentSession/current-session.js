@@ -2,9 +2,24 @@ import React from "react";
 import "./current-session.css";
 
 class CurrentSession extends React.Component {
+  getData() {
+    let databody = {};
+
+    return fetch("http://localhost:5000/Braven-Data/Student", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then(res => res.json())
+      .then(data => console.log(data));
+  }
+
   render() {
     const interviewerCount = window.localStorage.getItem("interviewer");
     const studentCount = window.localStorage.getItem("student");
+
+    this.getData();
     return (
       <div className="main-container">
         <div className="header-main-container">

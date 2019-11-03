@@ -11,7 +11,7 @@ const App = () => (
     <div
       id="Background"
       style={{
-        background: "url(./Components/Web.png)",
+        background: "url(./Components/web.png)",
         backgroundSize: "100% 800px",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "0px -150px"

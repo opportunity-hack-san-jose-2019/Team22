@@ -2,6 +2,7 @@ import React from "react";
 import "./Checkin.css";
 import Papa from "papaparse";
 import { csv } from "d3";
+import { Link } from "react-router-dom";
 
 class Checkin extends React.Component {
   constructor(props) {
@@ -21,7 +22,6 @@ class Checkin extends React.Component {
   };
 
   getCsvData = e => {
-    e.preventDefault();
     if (this.state.role === "Student") {
       csv("./../../data/Student.csv")
         .then(data => {
@@ -109,9 +109,11 @@ class Checkin extends React.Component {
               />
             </label>
           </div>
-          <label className="Submit">
-            <input type="submit" value="Submit" onClick={this.getCsvData} />
-          </label>
+          <Link to="/current-session" onClick={this.getCsvData}>
+            <label className="Submit">
+              <input type="submit" value="Submit" />
+            </label>
+          </Link>
         </form>
       </div>
     );
