@@ -11,7 +11,7 @@ class Navbar extends React.Component {
           <Link to="/">
             <button id="home-btn">Home</button>
           </Link>
-          <Link to="/">
+          <Link to="/new-session">
             <button id="session-btn">Start a New Session</button>
           </Link>
         </div>
