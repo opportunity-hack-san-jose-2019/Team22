@@ -12,17 +12,19 @@ class CurrentSession extends React.Component {
           <button id="share">Share Session</button>
         </div>
         <div className="check-in-container">
-          <div className="check-in-item">Interviewers Checked In :</div>
-          <div className="check-in-item">Students Checked In: </div>
+          <div className="check-in-item">
+            Interviewers Checked In: {interviewerCount}
+          </div>
+          <div className="check-in-item">
+            Students Checked In: {studentCount}
+          </div>
         </div>
         <div className="matchup-container">
           <div className="header-matchup-container">Current Matchups:</div>
 
           <div className="pair-container">
-            <div className="pair-container-item">
-              Interviewers: {interviewerCount}
-            </div>
-            <div className="pair-container-item">Students: {studentCount}</div>
+            <div className="pair-container-item">Interviewers:</div>
+            <div className="pair-container-item">Students:</div>
           </div>
         </div>
       </div>
