@@ -8,7 +8,9 @@ class Checkin extends React.Component {
     super(props);
     this.state = {
       name: "",
-      role: ""
+      role: "",
+      studentCount: 0,
+      interviewerCount: 0
     };
   }
 
@@ -20,14 +22,39 @@ class Checkin extends React.Component {
 
   getCsvData = e => {
     e.preventDefault();
-    csv("./../../data/Student.csv")
-      .then(data => {
-        console.log(data);
-        console.log(this.state);
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    if (this.state.role === "Student") {
+      csv("./../../data/Student.csv")
+        .then(data => {
+          let student = "";
+          for (student of data) {
+            if (this.state.name === student["Full Name"]) {
+              this.setState(prevState => ({
+                studentCount: prevState.studentCount + 1
+              }));
+            }
+            console.log(this.state.studentCount);
+          }
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    } else {
+      csv("./../../data/Interviewers.csv")
+        .then(data => {
+          let interviewer = "";
+          for (interviewer of data) {
+            if (this.state.name === interviewer["Name"]) {
+              this.setState(prevState => ({
+                interviewerCount: prevState.interviewerCount + 1
+              }));
+            }
+            console.log(this.state.interviewerCount);
+          }
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    }
   };
 
   render() {
@@ -47,6 +74,7 @@ class Checkin extends React.Component {
               name="name"
               value={this.state.fullName}
               onChange={this.handleChange}
+              required
             />
           </label>
           <div className="radio-btn-container">
