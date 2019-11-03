@@ -5,10 +5,11 @@ import NewSession from "./routes/NewSession/new-session";
 import Checkin from "./routes/Checkin/Checkin";
 import Navbar from "./Components/Navbar/Navbar";
 import CurrentSession from "./routes/CurrentSession/current-session";
+import "./index.css";
 
 const App = () => (
   <Router>
-    <div>
+    <div id="Background">
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />

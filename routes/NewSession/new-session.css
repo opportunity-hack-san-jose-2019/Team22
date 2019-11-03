@@ -1,9 +1,10 @@
 .NewSession {
-    border: 1px solid dimgray;
+    background-color: white;
     width: 500px;
     align-items: center;
     padding: 10px 10px 50px;
     margin: 100px auto auto;
+    box-shadow: 5px 5px 8px #C8C8C8;
 }
 
 h1 {
