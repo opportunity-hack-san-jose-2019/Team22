@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development --open --hot --history-api-fallback"
+    "start": "webpack-dev-server --mode development --open --hot --history-api-fallback",
+    "server": "cd ./server && npm run start",
+    "dev": "concurrently \"npm run server\" \"npm run start\" "
   },
   "author": "",
   "license": "ISC",
@@ -38,6 +40,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "concurrently": "^5.0.0",
     "dotenv": "^8.1.0",
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.14",
