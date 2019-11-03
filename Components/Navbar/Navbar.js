@@ -6,7 +6,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <header className="HomeNavBar">
-        <div className="matchup">matchup</div>
+      <div className="matchup center">matchup</div>
         <div className="btn-container">
           <Link to="/">
             <button className="home-btn">Home</button>
