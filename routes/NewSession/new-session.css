@@ -1,28 +1,25 @@
-
-.Checkin {
+.NewSession {
     border: 1px solid dimgray;
-    margin:auto;
     width: 500px;
     align-items: center;
-    padding: 10px;
-    padding-bottom: 50px;
-    margin-top: 100px;
+    padding: 10px 10px 50px;
+    margin: 100px auto auto;
 }
 
 h1 {
     color: #f06f78;
     text-align: center;
-
+    padding-bottom: 10px;
 }
 
-.form {
+.form2 {
     position: relative;
     width:400px;
     margin: auto;
     height: 400px;
 }
 
-.SessionCode {
+.Student {
     font-size: large;
     width: 400px;
     position: absolute;
@@ -30,17 +27,17 @@ h1 {
 
 }
 
-.SessionCode input {
+.Student input {
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.SessionCode input:focus {
+.Student input:focus {
     outline: none;
 }
 
-.Email {
+.Interviewer {
     font-size: large;
     position: absolute;
     top:75px;
@@ -48,24 +45,58 @@ h1 {
     color: #3f3f3f;
 }
 
-.Email input{
+.Interviewer input{
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.Email input:focus{
+.Interviewer input:focus{
+    outline: none;
+}
+.Rounds {
+    font-size: large;
+    position: absolute;
+    top:150px;
+    width: 400px;
+    color: #3f3f3f;
+}
+
+.Rounds input{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.Rounds input:focus{
+    outline: none;
+}
+.GoogleFormLink {
+    font-size: large;
+    position: absolute;
+    top:225px;
+    width: 400px;
+    color: #3f3f3f;
+}
+
+.GoogleFormLink input{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.GoogleFormLink input:focus{
     outline: none;
 }
 
-.Submit {
+.Submit2 {
     width: 350px;
     position: absolute;
-    top:165px;
+    top:345px;
 
 }
 
-.Submit input {
+.Submit2 input {
     width: 405px;
     padding-top: 15px;
     padding-bottom: 15px;
