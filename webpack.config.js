@@ -32,6 +32,15 @@ module.exports = {
         }
       },
       {
+        test: /\.csv$/,
+        loader: "csv-loader",
+        options: {
+          dynamicTyping: true,
+          header: true,
+          skipEmptyLines: true
+        }
+      },
+      {
         test: /\.svg$/,
         use: [
           {
@@ -55,6 +64,7 @@ module.exports = {
       }
     ]
   },
+  target: "node",
   devServer: {
     historyApiFallback: true
   },
