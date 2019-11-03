@@ -74,9 +74,10 @@ h1 {
 
 .radio-btn-container {
   position: absolute;
-  top: 150px;
+  top: 140px;
 }
 
 .radio-btn {
   display: block;
+  padding-top: 10px;
 }
