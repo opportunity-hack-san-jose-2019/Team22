@@ -6,14 +6,15 @@ import { Link } from "react-router-dom";
 class Home extends React.Component {
   render() {
     return (
-<<<<<<< Updated upstream
       <div id="home">
-        <div id="welcome">
-          <h1>Welcome to Matchup!</h1>
-          <p1>
-            We've created a tool specifically for Braven to help with their mock
-            interview pairings.
-          </p1>
+        <div className="AlignHome">
+          <div id="welcome">
+            <h1>Welcome to Matchup!</h1>
+            <p1>
+              We've created a tool specifically for Braven to help with their
+              mock interview pairings.
+            </p1>
+          </div>
           <div id="checkIn">
             <h1>Student or Interviewer Check In</h1>
             <p>Here to check in for your interview matchup?</p>
@@ -24,33 +25,6 @@ class Home extends React.Component {
         </div>
         <div id="info">
           <h1>Let's get Started</h1>
-=======
-      <div id='home'>
-          <div className='AlignHome'>
-            <div id="welcome">
-                <h1>
-                  Welcome to Matchup!
-                </h1>
-                  <p1>
-                    We've created a tool specifically for Braven to help
-                    with their mock interview pairings.
-                  </p1>
-            </div>
-              <div id="checkIn">
-                  <h1>
-                      Student or Interviewer Check In
-                  </h1>
-                  <p>
-                      Here to check in for your interview matchup?
-                  </p>
-                  <Link to="/checkin">
-                      <button id="checkIn-btn">Check In!</button>
-                  </Link>
-              </div>
-          </div>
-      <div id="info">
-        <h1>Let's get Started</h1>
->>>>>>> Stashed changes
           <div className="numberCircle">1</div>
           <p>
             To begin a new session, upload your most current CSV file for
