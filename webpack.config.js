@@ -1,10 +1,14 @@
 const path = require("path");
 const htmlWebPackPlug = require("html-webpack-plugin");
+const copyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+  resolve: {
+    modules: ['src', 'node_modules']
+  },
   entry: {
     vendor: ["@babel/polyfill", "react", "react-dom"],
-    client: "./index.js"
+    client: "./src/index.js"
   },
   output: {
     path: path.join(__dirname, "/dist"),
@@ -68,9 +72,22 @@ module.exports = {
     historyApiFallback: true
   },
   plugins: [
+    new copyWebpackPlugin([
+      { from: './_redirects' },
+    ]),
     new htmlWebPackPlug({
-      template: "./index.html",
-      filename: "./index.html"
+      template: './src/index.html',
+      filename: './index.html',
+      inject: true,
+      minify: {
+        collapseWhitespace: true,
+        collapseInlineTagWhitespace: true,
+        minifyCSS: true,
+        minifyURLs: true,
+        minifyJS: true,
+        removeComments: true,
+        removeRedundantAttributes: true
+      }
     })
   ]
 };
