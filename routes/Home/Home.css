@@ -22,9 +22,10 @@
 }
 
 #welcome p1 {
-    font-size: large;
     font-family: Arial;
     color: #3f3f3f;
+    font-size: 20px;
+
 
 }
 
@@ -45,7 +46,7 @@
 
 #info p{
     text-align: center;
-    font-size: large;
+    font-size: 18px;
     margin-left: 20px;
     margin-right: 20px;
     font-family: Arial;
@@ -55,17 +56,24 @@
 
 #checkIn {
     margin-top: 100px;
-    min-height: 50%;
     font-size: 20px;
     text-align: center;
-
+    height: 200px;
     border: thin solid #f06f78;
     padding:10px;
+}
+
+#checkIn p {
+    font-family: Arial;
+    color: #3f3f3f;
+    font-size: 18px;
+    margin-top: 35px;
 }
 
 #checkIn h1 {
     color: #f06f78;
     font-size: larger;
+    margin-bottom: 10px;
 }
 
 .numberCircle {
@@ -83,12 +91,23 @@
 }
 
 #checkIn-btn {
-    display: block;
-    padding: 6px;
+    padding: 10px;
     width: 100px;
     border: none;
     border-radius: 20px;
     background-color: #f06f78;
     color: white;
-    margin: 15px auto 25px;
+    font-size: 15px;
+    margin: 6px auto 25px;
+    text-decoration: none;
 }
+
+#checkIn-btn:focus {
+    outline: 0;
+}
+
+#checkIn-btn:hover {
+    font-size: 16px;
+    transition: 0.2s ease-in;
+}
+

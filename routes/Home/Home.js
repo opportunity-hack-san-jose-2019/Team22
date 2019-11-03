@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import './Home.css';
+import {Link} from "react-router-dom";
 
 class Home extends React.Component {
   render() {
@@ -18,10 +19,12 @@ class Home extends React.Component {
             <h1>
                 Student or Interviewer Check In
             </h1>
-            <div>
+            <p>
               Here to check in for your interview matchup?
-            </div>
-            <button id="checkIn-btn">Check In!</button>
+            </p>
+              <Link to="/checkin">
+                  <button id="checkIn-btn">Check In!</button>
+              </Link>
           </div>
         </div>
       <div id="info">
