@@ -1,77 +1,82 @@
-
 .Checkin {
-    border: 1px solid dimgray;
-    margin:auto;
-    width: 500px;
-    align-items: center;
-    padding: 10px;
-    padding-bottom: 50px;
-    margin-top: 100px;
+  border: 1px solid dimgray;
+  margin: auto;
+  width: 500px;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 50px;
+  margin-top: 100px;
 }
 
 h1 {
-    color: #f06f78;
-    text-align: center;
-
+  color: #f06f78;
+  text-align: center;
 }
 
 .form {
-    position: relative;
-    width:400px;
-    margin: auto;
-    height: 400px;
+  position: relative;
+  width: 400px;
+  margin: auto;
+  height: 400px;
 }
 
 .SessionCode {
-    font-size: large;
-    width: 400px;
-    position: absolute;
-    color: #3f3f3f;
-
+  font-size: large;
+  width: 400px;
+  position: absolute;
+  color: #3f3f3f;
 }
 
 .SessionCode input {
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .SessionCode input:focus {
-    outline: none;
+  outline: none;
 }
 
 .Email {
-    font-size: large;
-    position: absolute;
-    top:75px;
-    width: 400px;
-    color: #3f3f3f;
+  font-size: large;
+  position: absolute;
+  top: 75px;
+  width: 400px;
+  color: #3f3f3f;
 }
 
-.Email input{
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+.Email input {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.Email input:focus{
-    outline: none;
+.Email input:focus {
+  outline: none;
 }
 
 .Submit {
-    width: 350px;
-    position: absolute;
-    top:165px;
-
+  width: 350px;
+  position: absolute;
+  top: 225px;
 }
 
 .Submit input {
-    width: 405px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 15px;
-    border: none;
-    border-radius: 20px;
-    background-color: #f06f78;
-    color: white;
+  width: 405px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f06f78;
+  color: white;
+}
+
+.radio-btn-container {
+  position: absolute;
+  top: 150px;
+}
+
+.radio-btn {
+  display: block;
 }
