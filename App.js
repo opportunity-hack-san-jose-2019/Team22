@@ -5,8 +5,6 @@ import NewSession from "./routes/NewSession/new-session";
 import Checkin from "./routes/Checkin/Checkin";
 import Navbar from "./Components/Navbar/Navbar";
 import CurrentSession from "./routes/CurrentSession/current-session";
-import "./index.css";
-import { SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION } from "constants";
 
 const App = () => (
   <Router>
