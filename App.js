@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./routes/Home";
+import Home from "./routes/Home/Home";
 import NewSession from "./routes/NewSession/new-session";
 import Checkin from "./routes/Checkin/Checkin";
 import Navbar from "./Components/Navbar/Navbar";

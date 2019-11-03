@@ -1,0 +1,94 @@
+#home {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+#welcome {
+    width: 35%;
+    float: left;
+    margin-left: 8%;
+    margin-top: 150px;
+        /*
+    min-height: 100%;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex: 1 1 2;*/
+}
+
+#welcome p1 {
+    font-size: large;
+    font-family: Arial;
+    color: #3f3f3f;
+
+}
+
+#info {
+    margin-top: 3%;
+    border: thin solid grey;
+    width: 35%;
+    float: left;
+    margin-left: 10%;
+    padding-bottom: 50px;
+}
+
+#info h1 {
+    color: #f06f78;
+    margin-bottom: 50px;
+    margin-top: 45px;
+}
+
+#info p{
+    text-align: center;
+    font-size: large;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Arial;
+    margin-bottom: 50px;
+    color: #3f3f3f;
+}
+
+#checkIn {
+    margin-top: 100px;
+    min-height: 50%;
+    font-size: 20px;
+    text-align: center;
+
+    border: thin solid #f06f78;
+    padding:10px;
+}
+
+#checkIn h1 {
+    color: #f06f78;
+    font-size: larger;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+
+    background: #fff;
+    border: 2px solid #808080;
+    color: #808080;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+
+#checkIn-btn {
+    display: block;
+    padding: 6px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f06f78;
+    color: white;
+    margin: 15px auto 25px;
+}
