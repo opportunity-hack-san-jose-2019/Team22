@@ -18,18 +18,18 @@
   margin: auto;
   color: white;
   font-size: 40px;
+  display: flex;
 }
 
 .btn-container {
   padding: 10px;
-  position: absolute;
-  left: 85%;
+  left: 80%;
   margin-left: -85px;
+  display: flex;
 }
 
 button {
   padding: 10px;
-  margin-left: 20px;
   font-size: 15px;
   padding-right: 20px;
   padding-left: 20px;
