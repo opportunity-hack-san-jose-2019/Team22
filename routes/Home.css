@@ -1,0 +1,55 @@
+#home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row no-wrap;
+    place-content: center space-between;
+    
+}
+
+#welcome {
+    /* margin-top: 3%; */
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex: 1 1 2;
+}
+
+#info {
+    /* margin-top: 3%; */
+    border: thin solid grey;
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    /* place-content: center center; */
+}
+
+#checkIn {
+    min-height: 50%;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border: thin solid #f06f78;
+}
+
+#checkIn-btn {
+    display: block;
+    padding: 6px;
+    font-size: 25px;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #f06f78;
+    color: white;
+}
