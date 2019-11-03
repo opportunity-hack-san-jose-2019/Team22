@@ -31,9 +31,14 @@ class Checkin extends React.Component {
               this.setState(prevState => ({
                 studentCount: prevState.studentCount + 1
               }));
+              window.localStorage.setItem(
+                "student",
+                JSON.stringify(this.state.studentCount)
+              );
+              break;
             }
-            console.log(this.state.studentCount);
           }
+          console.log(this.state.studentCount);
         })
         .catch(err => {
           console.log(err);
@@ -47,9 +52,14 @@ class Checkin extends React.Component {
               this.setState(prevState => ({
                 interviewerCount: prevState.interviewerCount + 1
               }));
+              window.localStorage.setItem(
+                "interviewer",
+                JSON.stringify(this.state.interviewerCount)
+              );
+              break;
             }
-            console.log(this.state.interviewerCount);
           }
+          console.log(this.state.interviewerCount);
         })
         .catch(err => {
           console.log(err);

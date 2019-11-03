@@ -3,6 +3,8 @@ import "./current-session.css";
 
 class CurrentSession extends React.Component {
   render() {
+    const interviewerCount = window.localStorage.getItem("interviewer");
+    const studentCount = window.localStorage.getItem("student");
     return (
       <div className="main-container">
         <div className="header-main-container">
@@ -17,8 +19,10 @@ class CurrentSession extends React.Component {
           <div className="header-matchup-container">Current Matchups:</div>
 
           <div className="pair-container">
-            <div className="pair-container-item">Interviewers:</div>
-            <div className="pair-container-item">Students:</div>
+            <div className="pair-container-item">
+              Interviewers: {interviewerCount}
+            </div>
+            <div className="pair-container-item">Students: {studentCount}</div>
           </div>
         </div>
       </div>
