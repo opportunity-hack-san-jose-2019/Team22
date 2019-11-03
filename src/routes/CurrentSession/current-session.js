@@ -28,19 +28,28 @@ class CurrentSession extends React.Component {
         </div>
         <div className="check-in-container">
           <div className="check-in-item">
-            Interviewers Checked In: {interviewerCount}
+            Interviewers Checked In: 2 {interviewerCount}
           </div>
           <div className="check-in-item">
-            Students Checked In: {studentCount}
+            Students Checked In: 2 {studentCount}
           </div>
         </div>
         <div className="matchup-container">
-          <div className="header-matchup-container">Current Matchups:</div>
+          <div className="header-matchup-container">Current Matchups: 2</div>
 
           <div className="pair-container">
             <div className="pair-container-item">Interviewers:</div>
             <div className="pair-container-item">Students:</div>
           </div>
+          <div className="pair-container">
+            <div className="pair-container-item">John Doe</div>
+            <div className="pair-container-item">Bob Sagget</div>
+          </div>
+          <div className="pair-container">
+           <div className="pair-container-item">Joe Biden</div>
+            <div className="pair-container-item">Duck Sam</div>
+          </div>
+          <button id="share" style={{marginTop: "20px"}}>New Matchup</button>
         </div>
       </div>
     );

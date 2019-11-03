@@ -61,19 +61,36 @@ function (_React$Component) {
         className: "check-in-container"
       }, React.createElement("div", {
         className: "check-in-item"
-      }, "Interviewers Checked In: ", interviewerCount), React.createElement("div", {
+      }, "Interviewers Checked In: 2 ", interviewerCount), React.createElement("div", {
         className: "check-in-item"
-      }, "Students Checked In: ", studentCount)), React.createElement("div", {
+      }, "Students Checked In: 2 ", studentCount)), React.createElement("div", {
         className: "matchup-container"
       }, React.createElement("div", {
         className: "header-matchup-container"
-      }, "Current Matchups:"), React.createElement("div", {
+      }, "Current Matchups: 2"), React.createElement("div", {
         className: "pair-container"
       }, React.createElement("div", {
         className: "pair-container-item"
       }, "Interviewers:"), React.createElement("div", {
         className: "pair-container-item"
-      }, "Students:"))));
+      }, "Students:")), React.createElement("div", {
+        className: "pair-container"
+      }, React.createElement("div", {
+        className: "pair-container-item"
+      }, "John Doe"), React.createElement("div", {
+        className: "pair-container-item"
+      }, "Bob Sagget")), React.createElement("div", {
+        className: "pair-container"
+      }, React.createElement("div", {
+        className: "pair-container-item"
+      }, "Joe Biden"), React.createElement("div", {
+        className: "pair-container-item"
+      }, "Duck Sam")), React.createElement("button", {
+        id: "share",
+        style: {
+          marginTop: "20px"
+        }
+      }, "New Matchup")));
     }
   }]);
 
