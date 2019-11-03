@@ -1,0 +1,72 @@
+.main-container {
+  border: 1px solid dimgray;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  position: relative;
+  height: 100%;
+}
+
+.header-main-container {
+  color: #f06f78;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#share {
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  background-color: #f06f78;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.check-in-container {
+  display: flex;
+}
+
+.check-in-item {
+  border: 1px solid dimgray;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  color: gray;
+  padding: 10px;
+  width: 250px;
+}
+
+.matchup-container {
+  border: 1px solid dimgray;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.header-matchup-container {
+  color: #f06f78;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.pair-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.pair-container-item {
+  color: #f06f78;
+  font-size: 24px;
+  display: inline-block;
+  padding-left: 20px;
+}
