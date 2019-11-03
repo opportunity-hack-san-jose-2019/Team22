@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./routes/Home";
 import NewSession from "./routes/new-session";
-import Checkin from "./routes/Checkin";
+import Checkin from "./routes/Checkin/Checkin";
 import Navbar from "./Components/Navbar/Navbar"
 
 
