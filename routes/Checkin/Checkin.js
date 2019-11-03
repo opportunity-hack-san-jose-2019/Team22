@@ -35,6 +35,7 @@ class Checkin extends React.Component {
                 "student",
                 JSON.stringify(this.state.studentCount)
               );
+              alert("Thank you for checking in!");
               break;
             }
           }
@@ -56,6 +57,7 @@ class Checkin extends React.Component {
                 "interviewer",
                 JSON.stringify(this.state.interviewerCount)
               );
+              alert("Thank you for checking in!");
               break;
             }
           }
