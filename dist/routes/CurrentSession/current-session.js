@@ -31,10 +31,26 @@ function (_React$Component) {
   }
 
   _createClass(CurrentSession, [{
+    key: "getData",
+    value: function getData() {
+      var databody = {};
+      return fetch("http://localhost:5000/Braven-Data/Student", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }).then(function (res) {
+        return res.json();
+      }).then(function (data) {
+        return console.log(data);
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       var interviewerCount = window.localStorage.getItem("interviewer");
       var studentCount = window.localStorage.getItem("student");
+      this.getData();
       return React.createElement("div", {
         className: "main-container"
       }, React.createElement("div", {

@@ -5,16 +5,11 @@ import NewSession from "./routes/NewSession/new-session";
 import Checkin from "./routes/Checkin/Checkin";
 import Navbar from "./Components/Navbar/Navbar";
 import CurrentSession from "./routes/CurrentSession/current-session";
+import "./App.css";
 
 var App = function App() {
   return React.createElement(Router, null, React.createElement("div", {
-    id: "Background",
-    style: {
-      background: "url(./Components/Web.png)",
-      backgroundSize: "100% 800px",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "0px -150px"
-    }
+    id: "Background"
   }, React.createElement(Navbar, null), React.createElement(Switch, null, React.createElement(Route, {
     exact: true,
     path: "/",

@@ -1,6 +1,6 @@
 #Background {
   background-image: url("./Components/web.png");
-  background-size: 100% 800px;
-  background-repeat: no-repeat;
-  background-position: "0px -150px";
+  background-size: 100% 1000px;
+  background-repeat: repeat-y;
+  background-position: "0px - 400px";
 }

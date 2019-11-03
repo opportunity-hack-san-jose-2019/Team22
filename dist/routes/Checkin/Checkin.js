@@ -22,6 +22,7 @@ import React from "react";
 import "./Checkin.css";
 import Papa from "papaparse";
 import { csv } from "d3";
+import { Link } from "react-router-dom";
 
 var Checkin =
 /*#__PURE__*/
@@ -40,8 +41,6 @@ function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "getCsvData", function (e) {
-      e.preventDefault();
-
       if (_this.state.role === "Student") {
         csv("./../../data/Student.csv").then(function (data) {
           var student = "";
@@ -176,13 +175,15 @@ function (_React$Component) {
         name: "role",
         value: "Interviewer",
         onChange: this.handleChange
-      }))), React.createElement("label", {
+      }))), React.createElement(Link, {
+        to: "/current-session",
+        onClick: this.getCsvData
+      }, React.createElement("label", {
         className: "Submit"
       }, React.createElement("input", {
         type: "submit",
-        value: "Submit",
-        onClick: this.getCsvData
-      }))));
+        value: "Submit"
+      })))));
     }
   }]);
 

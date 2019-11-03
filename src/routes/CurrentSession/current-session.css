@@ -6,6 +6,8 @@
   margin-top: 5%;
   position: relative;
   height: 100%;
+  background-color: white;
+  box-shadow: 5px 5px 8px #C8C8C8;
 }
 
 .header-main-container {

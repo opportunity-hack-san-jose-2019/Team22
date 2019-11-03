@@ -6,12 +6,8 @@
   "scripts": {
     "pack": "webpack --config webpack.config.js",
     "start": "webpack-dev-server --mode development --open --hot --history-api-fallback",
-    "heroku-postbuild": "npm install --dev",
-    "deploy": "aws s3 sync build/ s3://braven-matchapp",
     "babel": "babel src -d dist",
-    "build": "npm run pack && npm run babel",
-    "server": "npm start --prefix server",
-    "dev": "concurrently \"npm run server\" \"npm run start\" "
+    "build": "npm run pack && npm run babel"
   },
   "author": "",
   "license": "ISC",
