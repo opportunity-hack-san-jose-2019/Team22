@@ -2,12 +2,11 @@
 .HomeNavBar {
   height: 69px;
   width: 100%;
-  position: relative;
   top: 0;
   left: 0;
   background-color: #f06f78;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
@@ -18,7 +17,7 @@
   margin: auto;
   color: white;
   font-size: 40px;
-  display: flex;
+  display:flex;
 }
 
 .btn-container {
@@ -42,4 +41,10 @@ button {
 .session-btn {
   background-color: white;
   color: #f06f78;
+}
+
+.center {
+  position: relative;
+  margin: auto;
+  left: 5%;
 }
