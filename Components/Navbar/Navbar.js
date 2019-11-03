@@ -6,13 +6,13 @@ class Navbar extends React.Component {
   render() {
     return (
       <header className="HomeNavBar">
-      <div className="matchup center">matchup</div>
+        <div className="matchup center">matchup</div>
         <div className="btn-container">
           <Link to="/">
-            <button className="home-btn">Home</button>
+            <button id="home-btn">Home</button>
           </Link>
           <Link to="/">
-            <button className="session-btn">Start a New Session</button>
+            <button id="session-btn">Start a New Session</button>
           </Link>
         </div>
       </header>
