@@ -5,6 +5,7 @@ class Checkin extends React.Component {
         return (
             <div>
                 <div>this is checkin</div>
+
             </div>
         );
     }

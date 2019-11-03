@@ -4,7 +4,7 @@ class NewSession extends React.Component {
     render() {
         return (
             <div>
-                <div>new session</div>
+                <h1>Start Your Session</h1>
             </div>
         );
     }
